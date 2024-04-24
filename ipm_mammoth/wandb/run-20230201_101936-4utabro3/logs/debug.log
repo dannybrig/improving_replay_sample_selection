@@ -1,0 +1,35 @@
+2023-02-01 10:19:36,815 INFO    MainThread:457668 [wandb_setup.py:_flush():68] Configure stats pid to 457668
+2023-02-01 10:19:36,816 INFO    MainThread:457668 [wandb_setup.py:_flush():68] Loading settings from /localhome/dbrignac/.config/wandb/settings
+2023-02-01 10:19:36,816 INFO    MainThread:457668 [wandb_setup.py:_flush():68] Loading settings from /localhome/dbrignac/Documents/Python/continual_learning_work/iDILT_v2/mammoth/wandb/settings
+2023-02-01 10:19:36,816 INFO    MainThread:457668 [wandb_setup.py:_flush():68] Loading settings from environment variables: {'_require_service': 'True'}
+2023-02-01 10:19:36,816 INFO    MainThread:457668 [wandb_setup.py:_flush():68] Inferring run settings from compute environment: {'program_relpath': 'mammoth/utils/main.py', 'program': '/localhome/dbrignac/Documents/Python/continual_learning_work/iDILT_v2/mammoth/./utils/main.py'}
+2023-02-01 10:19:36,816 INFO    MainThread:457668 [wandb_setup.py:_flush():68] Applying login settings: {'api_key': '***REDACTED***'}
+2023-02-01 10:19:36,816 INFO    MainThread:457668 [wandb_init.py:_log_setup():476] Logging user logs to /localhome/dbrignac/Documents/Python/continual_learning_work/iDILT_v2/mammoth/wandb/run-20230201_101936-4utabro3/logs/debug.log
+2023-02-01 10:19:36,816 INFO    MainThread:457668 [wandb_init.py:_log_setup():477] Logging internal logs to /localhome/dbrignac/Documents/Python/continual_learning_work/iDILT_v2/mammoth/wandb/run-20230201_101936-4utabro3/logs/debug-internal.log
+2023-02-01 10:19:36,816 INFO    MainThread:457668 [wandb_init.py:init():516] calling init triggers
+2023-02-01 10:19:36,816 INFO    MainThread:457668 [wandb_init.py:init():519] wandb.init called with sweep_config: {}
+config: {'seed': None, 'notes': None, 'non_verbose': 0, 'disable_log': 0, 'validation': 0, 'ignore_other_metrics': 0, 'debug_mode': 0, 'nowand': 0, 'wandb_entity': 'regaz', 'wandb_project': 'mammoth', 'dataset': 'seq-cifar10', 'model': 'der', 'lr': 0.03, 'optim_wd': 0.0, 'optim_mom': 0.0, 'optim_nesterov': 0, 'n_epochs': 50, 'batch_size': 32, 'distributed': 'no', 'buffer_size': 200, 'minibatch_size': 32, 'alpha': 0.3, 'conf_jobnum': 'c650b809-d652-4532-8996-88e3bef76d4a', 'conf_timestamp': '2023-02-01 10:18:30.964665', 'conf_host': 'engr-mahala04gn'}
+2023-02-01 10:19:36,816 INFO    MainThread:457668 [wandb_init.py:init():569] starting backend
+2023-02-01 10:19:36,816 INFO    MainThread:457668 [wandb_init.py:init():573] setting up manager
+2023-02-01 10:19:36,822 INFO    MainThread:457668 [backend.py:_multiprocessing_setup():102] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2023-02-01 10:19:36,840 INFO    MainThread:457668 [wandb_init.py:init():580] backend started and connected
+2023-02-01 10:19:36,843 INFO    MainThread:457668 [wandb_init.py:init():658] updated telemetry
+2023-02-01 10:19:36,849 INFO    MainThread:457668 [wandb_init.py:init():693] communicating run to backend with 60 second timeout
+2023-02-01 10:19:39,921 WARNING MsgRouterThr:457668 [router.py:message_loop():77] message_loop has been closed
+2023-02-01 10:19:43,223 WARNING MainThread:457668 [wandb_init.py:init():1099] interrupted
+Traceback (most recent call last):
+  File "/localhome/dbrignac/miniconda3/envs/avalanche-env/lib/python3.10/site-packages/wandb/sdk/wandb_init.py", line 1078, in init
+    run = wi.init()
+  File "/localhome/dbrignac/miniconda3/envs/avalanche-env/lib/python3.10/site-packages/wandb/sdk/wandb_init.py", line 697, in init
+    result = handle.wait(
+  File "/localhome/dbrignac/miniconda3/envs/avalanche-env/lib/python3.10/site-packages/wandb/sdk/lib/mailbox.py", line 261, in wait
+    found = self._slot._get_and_clear(timeout=wait_timeout)
+  File "/localhome/dbrignac/miniconda3/envs/avalanche-env/lib/python3.10/site-packages/wandb/sdk/lib/mailbox.py", line 118, in _get_and_clear
+    if self._wait(timeout=timeout):
+  File "/localhome/dbrignac/miniconda3/envs/avalanche-env/lib/python3.10/site-packages/wandb/sdk/lib/mailbox.py", line 114, in _wait
+    return self._event.wait(timeout=timeout)
+  File "/localhome/dbrignac/miniconda3/envs/avalanche-env/lib/python3.10/threading.py", line 607, in wait
+    signaled = self._cond.wait(timeout)
+  File "/localhome/dbrignac/miniconda3/envs/avalanche-env/lib/python3.10/threading.py", line 324, in wait
+    gotit = waiter.acquire(True, timeout)
+KeyboardInterrupt

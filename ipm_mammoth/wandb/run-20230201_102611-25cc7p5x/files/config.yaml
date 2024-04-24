@@ -1,0 +1,99 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    cli_version: 0.13.4
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    python_version: 3.10.6
+    start_time: 1675272371.452007
+    t:
+      1:
+      - 1
+      - 41
+      - 51
+      - 55
+      3:
+      - 16
+      - 23
+      4: 3.10.6
+      5: 0.13.4
+      8:
+      - 5
+alpha:
+  desc: null
+  value: 0.3
+batch_size:
+  desc: null
+  value: 32
+buffer_size:
+  desc: null
+  value: 200
+conf_host:
+  desc: null
+  value: engr-mahala04gn
+conf_jobnum:
+  desc: null
+  value: 9d99dce3-c5c8-4328-85e4-6a0381b31a1b
+conf_timestamp:
+  desc: null
+  value: '2023-02-01 10:26:10.576498'
+dataset:
+  desc: null
+  value: seq-cifar10
+debug_mode:
+  desc: null
+  value: 0
+disable_log:
+  desc: null
+  value: 0
+distributed:
+  desc: null
+  value: 'no'
+ignore_other_metrics:
+  desc: null
+  value: 0
+lr:
+  desc: null
+  value: 0.03
+minibatch_size:
+  desc: null
+  value: 32
+model:
+  desc: null
+  value: der
+n_epochs:
+  desc: null
+  value: 50
+non_verbose:
+  desc: null
+  value: 0
+notes:
+  desc: null
+  value: null
+nowand:
+  desc: null
+  value: 0
+optim_mom:
+  desc: null
+  value: 0.0
+optim_nesterov:
+  desc: null
+  value: 0
+optim_wd:
+  desc: null
+  value: 0.0
+seed:
+  desc: null
+  value: null
+validation:
+  desc: null
+  value: 0
+wandb_entity:
+  desc: null
+  value: regaz
+wandb_project:
+  desc: null
+  value: mammoth

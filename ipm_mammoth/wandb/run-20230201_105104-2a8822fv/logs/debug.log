@@ -1,0 +1,32 @@
+2023-02-01 10:51:04,300 INFO    MainThread:472801 [wandb_setup.py:_flush():68] Configure stats pid to 472801
+2023-02-01 10:51:04,301 INFO    MainThread:472801 [wandb_setup.py:_flush():68] Loading settings from /localhome/dbrignac/.config/wandb/settings
+2023-02-01 10:51:04,301 INFO    MainThread:472801 [wandb_setup.py:_flush():68] Loading settings from /localhome/dbrignac/Documents/Python/continual_learning_work/iDILT_v2/ipm_mammoth/wandb/settings
+2023-02-01 10:51:04,301 INFO    MainThread:472801 [wandb_setup.py:_flush():68] Loading settings from environment variables: {'_require_service': 'True'}
+2023-02-01 10:51:04,301 INFO    MainThread:472801 [wandb_setup.py:_flush():68] Inferring run settings from compute environment: {'program_relpath': 'ipm_mammoth/utils/main.py', 'program': '/localhome/dbrignac/Documents/Python/continual_learning_work/iDILT_v2/ipm_mammoth/./utils/main.py'}
+2023-02-01 10:51:04,301 INFO    MainThread:472801 [wandb_init.py:_log_setup():476] Logging user logs to /localhome/dbrignac/Documents/Python/continual_learning_work/iDILT_v2/ipm_mammoth/wandb/run-20230201_105104-2a8822fv/logs/debug.log
+2023-02-01 10:51:04,301 INFO    MainThread:472801 [wandb_init.py:_log_setup():477] Logging internal logs to /localhome/dbrignac/Documents/Python/continual_learning_work/iDILT_v2/ipm_mammoth/wandb/run-20230201_105104-2a8822fv/logs/debug-internal.log
+2023-02-01 10:51:04,301 INFO    MainThread:472801 [wandb_init.py:init():516] calling init triggers
+2023-02-01 10:51:04,301 INFO    MainThread:472801 [wandb_init.py:init():519] wandb.init called with sweep_config: {}
+config: {'seed': None, 'notes': None, 'non_verbose': 0, 'disable_log': 0, 'validation': 0, 'ignore_other_metrics': 0, 'debug_mode': 0, 'nowand': 0, 'wandb_entity': 'dbrignac', 'wandb_project': 'ipm_mammoth', 'dataset': 'seq-cifar10', 'model': 'der', 'lr': 0.03, 'optim_wd': 0.0, 'optim_mom': 0.0, 'optim_nesterov': 0, 'n_epochs': 50, 'batch_size': 32, 'distributed': 'no', 'buffer_size': 200, 'minibatch_size': 32, 'alpha': 0.3, 'conf_jobnum': '33dff7fc-da2f-42a1-a541-3eba0166edb4', 'conf_timestamp': '2023-02-01 10:51:03.286369', 'conf_host': 'engr-mahala04gn'}
+2023-02-01 10:51:04,301 INFO    MainThread:472801 [wandb_init.py:init():569] starting backend
+2023-02-01 10:51:04,301 INFO    MainThread:472801 [wandb_init.py:init():573] setting up manager
+2023-02-01 10:51:04,305 INFO    MainThread:472801 [backend.py:_multiprocessing_setup():102] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2023-02-01 10:51:04,309 INFO    MainThread:472801 [wandb_init.py:init():580] backend started and connected
+2023-02-01 10:51:04,311 INFO    MainThread:472801 [wandb_init.py:init():658] updated telemetry
+2023-02-01 10:51:04,313 INFO    MainThread:472801 [wandb_init.py:init():693] communicating run to backend with 60 second timeout
+2023-02-01 10:51:04,628 INFO    MainThread:472801 [wandb_run.py:_on_init():2000] communicating current version
+2023-02-01 10:51:04,726 INFO    MainThread:472801 [wandb_run.py:_on_init():2004] got version response upgrade_message: "wandb version 0.13.9 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2023-02-01 10:51:04,726 INFO    MainThread:472801 [wandb_init.py:init():728] starting run threads in backend
+2023-02-01 10:51:08,554 INFO    MainThread:472801 [wandb_run.py:_console_start():1980] atexit reg
+2023-02-01 10:51:08,555 INFO    MainThread:472801 [wandb_run.py:_redirect():1838] redirect: SettingsConsole.WRAP_RAW
+2023-02-01 10:51:08,555 INFO    MainThread:472801 [wandb_run.py:_redirect():1903] Wrapping output streams.
+2023-02-01 10:51:08,555 INFO    MainThread:472801 [wandb_run.py:_redirect():1925] Redirects installed.
+2023-02-01 10:51:08,555 INFO    MainThread:472801 [wandb_init.py:init():765] run started, returning control to user process
+2023-02-01 11:09:22,172 INFO    MainThread:472801 [wandb_run.py:_finish():1746] finishing run dbrignac/ipm_mammoth/2a8822fv
+2023-02-01 11:09:22,172 INFO    MainThread:472801 [wandb_run.py:_atexit_cleanup():1949] got exitcode: 0
+2023-02-01 11:09:22,172 INFO    MainThread:472801 [wandb_run.py:_restore():1932] restore
+2023-02-01 11:09:22,172 INFO    MainThread:472801 [wandb_run.py:_restore():1938] restore done
+2023-02-01 11:09:28,701 INFO    MainThread:472801 [wandb_run.py:_footer_history_summary_info():3377] rendering history
+2023-02-01 11:09:28,702 INFO    MainThread:472801 [wandb_run.py:_footer_history_summary_info():3409] rendering summary
+2023-02-01 11:09:28,706 INFO    MainThread:472801 [wandb_run.py:_footer_sync_info():3333] logging synced files

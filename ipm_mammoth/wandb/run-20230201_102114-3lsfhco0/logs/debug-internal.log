@@ -1,0 +1,69 @@
+2023-02-01 10:21:14,928 INFO    StreamThr :458460 [internal.py:wandb_internal():88] W&B internal server running at pid: 458460, started at: 2023-02-01 10:21:14.927826
+2023-02-01 10:21:14,929 DEBUG   HandlerThread:458460 [handler.py:handle_request():138] handle_request: status
+2023-02-01 10:21:14,929 DEBUG   SenderThread:458460 [sender.py:send_request():317] send_request: status
+2023-02-01 10:21:14,930 DEBUG   SenderThread:458460 [sender.py:send():303] send: header
+2023-02-01 10:21:14,930 DEBUG   SenderThread:458460 [sender.py:send():303] send: run
+2023-02-01 10:21:14,932 INFO    WriterThread:458460 [datastore.py:open_for_write():75] open: /localhome/dbrignac/Documents/Python/continual_learning_work/iDILT_v2/mammoth/wandb/run-20230201_102114-3lsfhco0/run-3lsfhco0.wandb
+2023-02-01 10:21:15,186 ERROR   SenderThread:458460 [internal_api.py:execute():216] 404 response executing GraphQL.
+2023-02-01 10:21:15,187 ERROR   SenderThread:458460 [internal_api.py:execute():217] {"errors":[{"message":"project not found","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2023-02-01 10:21:15,931 INFO    HandlerThread:458460 [handler.py:finish():814] shutting down handler
+2023-02-01 10:21:15,933 INFO    WriterThread:458460 [datastore.py:close():279] close: /localhome/dbrignac/Documents/Python/continual_learning_work/iDILT_v2/mammoth/wandb/run-20230201_102114-3lsfhco0/run-3lsfhco0.wandb
+2023-02-01 10:21:15,934 ERROR   StreamThr :458460 [internal.py:wandb_internal():163] Thread SenderThread:
+Traceback (most recent call last):
+  File "/localhome/dbrignac/miniconda3/envs/avalanche-env/lib/python3.10/site-packages/wandb/sdk/lib/retry.py", line 113, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/localhome/dbrignac/miniconda3/envs/avalanche-env/lib/python3.10/site-packages/wandb/sdk/internal/internal_api.py", line 213, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "/localhome/dbrignac/miniconda3/envs/avalanche-env/lib/python3.10/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/localhome/dbrignac/miniconda3/envs/avalanche-env/lib/python3.10/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/localhome/dbrignac/miniconda3/envs/avalanche-env/lib/python3.10/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/transport/requests.py", line 39, in execute
+    request.raise_for_status()
+  File "/localhome/dbrignac/miniconda3/envs/avalanche-env/lib/python3.10/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://api.wandb.ai/graphql
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/localhome/dbrignac/miniconda3/envs/avalanche-env/lib/python3.10/site-packages/wandb/apis/normalize.py", line 26, in wrapper
+    return func(*args, **kwargs)
+  File "/localhome/dbrignac/miniconda3/envs/avalanche-env/lib/python3.10/site-packages/wandb/sdk/internal/internal_api.py", line 1474, in upsert_run
+    response = self.gql(
+  File "/localhome/dbrignac/miniconda3/envs/avalanche-env/lib/python3.10/site-packages/wandb/sdk/lib/retry.py", line 129, in __call__
+    retry_timedelta_triggered = check_retry_fn(e)
+  File "/localhome/dbrignac/miniconda3/envs/avalanche-env/lib/python3.10/site-packages/wandb/util.py", line 1030, in check_retry_fn
+    return fallback_retry_fn(e)
+  File "/localhome/dbrignac/miniconda3/envs/avalanche-env/lib/python3.10/site-packages/wandb/util.py", line 977, in no_retry_auth
+    raise CommError("Permission denied, ask the project owner to grant you access")
+wandb.errors.CommError: Permission denied, ask the project owner to grant you access
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/localhome/dbrignac/miniconda3/envs/avalanche-env/lib/python3.10/site-packages/wandb/sdk/internal/internal_util.py", line 50, in run
+    self._run()
+  File "/localhome/dbrignac/miniconda3/envs/avalanche-env/lib/python3.10/site-packages/wandb/sdk/internal/internal_util.py", line 101, in _run
+    self._process(record)
+  File "/localhome/dbrignac/miniconda3/envs/avalanche-env/lib/python3.10/site-packages/wandb/sdk/internal/internal.py", line 308, in _process
+    self._sm.send(record)
+  File "/localhome/dbrignac/miniconda3/envs/avalanche-env/lib/python3.10/site-packages/wandb/sdk/internal/sender.py", line 305, in send
+    send_handler(record)
+  File "/localhome/dbrignac/miniconda3/envs/avalanche-env/lib/python3.10/site-packages/wandb/sdk/internal/sender.py", line 797, in send_run
+    self._init_run(run, config_value_dict)
+  File "/localhome/dbrignac/miniconda3/envs/avalanche-env/lib/python3.10/site-packages/wandb/sdk/internal/sender.py", line 823, in _init_run
+    server_run, inserted, server_messages = self._api.upsert_run(
+  File "/localhome/dbrignac/miniconda3/envs/avalanche-env/lib/python3.10/site-packages/wandb/apis/normalize.py", line 62, in wrapper
+    raise CommError(message, err).with_traceback(sys.exc_info()[2])
+  File "/localhome/dbrignac/miniconda3/envs/avalanche-env/lib/python3.10/site-packages/wandb/apis/normalize.py", line 26, in wrapper
+    return func(*args, **kwargs)
+  File "/localhome/dbrignac/miniconda3/envs/avalanche-env/lib/python3.10/site-packages/wandb/sdk/internal/internal_api.py", line 1474, in upsert_run
+    response = self.gql(
+  File "/localhome/dbrignac/miniconda3/envs/avalanche-env/lib/python3.10/site-packages/wandb/sdk/lib/retry.py", line 129, in __call__
+    retry_timedelta_triggered = check_retry_fn(e)
+  File "/localhome/dbrignac/miniconda3/envs/avalanche-env/lib/python3.10/site-packages/wandb/util.py", line 1030, in check_retry_fn
+    return fallback_retry_fn(e)
+  File "/localhome/dbrignac/miniconda3/envs/avalanche-env/lib/python3.10/site-packages/wandb/util.py", line 977, in no_retry_auth
+    raise CommError("Permission denied, ask the project owner to grant you access")
+wandb.errors.CommError: Permission denied, ask the project owner to grant you access

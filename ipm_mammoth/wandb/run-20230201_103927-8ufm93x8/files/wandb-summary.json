@@ -1,0 +1,1 @@
+{"loss": 0.015357143245637417, "_timestamp": 1675273806.0709445, "_runtime": 638.2612454891205, "_step": 44575, "RESULT_class_mean_accs": 46.75, "RESULT_task_mean_accs": 68.05, "RESULT_class_acc_0": 0.0, "RESULT_task_acc_0": 42.6, "RESULT_class_acc_1": 93.5, "RESULT_task_acc_1": 93.5}
